@@ -1,0 +1,78 @@
+heading - it will introduce users to the page
+img - that shows us and a form of visual appeal
+sections that explain different things about us
+links for people to reach out to us.
+
+Examples of inline-block elements i.e elements that sits beside each other:
+- the a tag
+- img tag
+- button
+- span
+
+Example of block elements i.e elements that stack on top of each other:
+- p
+- div
+- headings i.e h1 through h6
+- list
+
+To change an inline-block element to block element i.e to change element sitting beside each other to stacking on top of each other, we use the following css code:
+
+selector {
+    display: block;
+}
+
+on the other hand, to change a block element to inline-block element i.e to change element stacking on top of each other to sit beside each other, we use the following css code:
+
+selector {
+    display: inline-block;
+}
+
+
+-----------------List----------------
+In HTML there are two types of lists:
+- Unordered List with the tag <ul>
+Unodered list are unnumbered and follow no specific order
+
+- Ordered List with the tag <ol>
+Ordered list on the other hand are ordered i.e they follow a logical pattern that are arranged in a numbered or alphabetical manner
+
+Rule: when handling list, only a list item can be directly inside a list whether ordered or unordered
+when using a list, we specify the list items with the tag <li>
+
+----------------- Tables -------------------
+There are four parts to every tables:
+- <tables>: This is the outermost part of the table definition i.e this is what wraps around everything else for the table.
+______________________________________
+- <tr>: This translates to "table row". every line in a table is a row, hence every element or data in a row are all enclosed in the tr tag.
+_______________________________________
+- <th>: This is a semantic element that tells assistive technology that this is the heading of our table. It also stands out visually more than the other elemend/data in the table.
+_______________________________________
+- <td>: This stands for the data in the table hence refered to as the table data. While building a table every other element that are not the heading are refered to as the table data.
+
+--------------------- semantic HTML --------------------
+This refers to an HTML tag that has a meaningful usage to the computer, crawlers, and assistive technology. it help group the html structure meaningfully.
+The popular semantic HTMLs includes:
+- header <header>
+- navigations <nav>
+- sections <section>
+- articles <article>
+- aside <aside>
+- figure <figure>
+- figcaption <figcaption>
+- footer <footer>
+- time <time>
+- address <addr>
+- table <table>
+    <table>
+        <tr>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+- list <list>
+    <ul>
+        <li></li>
+    </ul>
+- main <main>
