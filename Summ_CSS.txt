@@ -76,3 +76,42 @@ The popular semantic HTMLs includes:
         <li></li>
     </ul>
 - main <main>
+
+-------------------CSS------------------------
+There are 3 methods of writing a CSS for your HTML project:
+1. Inline CSS: This is written directly inside the html tag of the element we want to style. e.g:
+    <p style="font-weight: bold; font-family: arial;">Hello World</p>
+
+2. Internal CSS: an internal CSS is written in the head section of an HTML file. The CSS is enclosed within the style tag. e.g:
+    <style>
+        p {
+            background-color: red;
+            font-size: 20px
+        }
+
+        div {
+            border: 1px;
+            background-color: yellow;
+        }
+    </style>
+
+3. External CSS: This is an advance CSS writing style, where the CSS for an HTML project is written in another file entirely for clean organizaton and ease of debugging.
+
+the format for styling an HTML entity is:
+    selector {
+        property: value;
+        property: value;
+    }
+
+A selector is a naming convention for styling an HTML entity. There are 3 types of selectors:
+1. Type selector
+    A type selector uses the html tag directly to target an html entity for styling. e.g p, div, a, header, span, img, input...
+        div {
+            property: value;
+        }
+
+2. Class selector
+    A class helps us group html entities to style for a focused styling regardless of the tag frequency. To use the class selector to target an html entity in css, we precede the class name with a dot. e.g suppose we have an html entity with the class name insider, to style it in css, we say:
+        .insider {
+            property: value;
+        }
