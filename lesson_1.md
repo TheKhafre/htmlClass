@@ -57,36 +57,38 @@ This selector is one of the most powerful selector in HTML with the high priorit
 
 If you follow the code below for example, you'll notice even though the #testId styling came before the .testclass and after the div type selector, the #testId styling still took the precedence and the background color was violet. This is to prove that regardless of the id styling in CSS, it will always take precedence above all other selector.
 ```html
-    <style>
-        div {
-                background-color: royalblue;
+    <head>
+        <style>
+            div {
+                    background-color: royalblue;
+                }
+
+            #testId {
+                background-color: violet;
             }
 
-        #testId {
-            background-color: violet;
-        }
+            .testClass {
+                background-color: yellow;
+            }
 
-        .testClass {
-            background-color: yellow;
-        }
-
-        .hello {
-            font-style: oblique;
-        }
-        .hi {
-            font-style: italic;
-        }
-        
-    </style>
-
-    <div class="testClass" id="testId">
-        <a href="#" download="true">
-            <p>
-                hi! This is me
-                <img src="me.jpg" alt="yes, thats a picture of me!" width="300px">
-            </p>
-        </a>
-    </div>
+            .hello {
+                font-style: oblique;
+            }
+            .hi {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="testClass" id="testId">
+            <a href="#" download="true">
+                <p>
+                    hi! This is me
+                    <img src="me.jpg" alt="yes, thats a picture of me!" width="300px">
+                </p>
+            </a>
+        </div>
+    </body>
 ```
 
 Styling texts in CSS
@@ -106,18 +108,22 @@ However, even though there are many other stylings that can be applied to text, 
 ### Font Family:
 This is the styling that introduces the category and type of font we want to use. an example of this is selecting from the two prominent font types: Serif and San Serif fonts. To add the font family to a text in css, we need to add the property "font-family" and in front of this property is where we need to add the font we want to use as a value e.g
 ```html
-	p {
-		font-family: Tahoma;
-	}
+    <style>
+        p {
+            font-family: Tahoma;
+        }
+    </style>
 ```
 There are many ways we can get the font for our project, the most common is through the built-in fonts on our computer system. This includes arial, helvetical, Tahoma etc. However, the issue here is that these fonts are not generic and fonts found on one computer might not be on another which could cause quite an issue, especially since we want everyone all over the world to be able to use our website and have the same experience. To resolve this issue, we usually employ the tactic of loading our font from an online source. This is a bit of an advance concept though, so let's stick with using the font on our laptop for now. We'll talk better about loading fonts from online source later when we get to talking about external links.
 
 ### Font Size
 The other property we need to talk about is the font-size. This determines how big or small our text appears and to load the font size we use "font-size" as our attribute and how big we want it to be as our value. Here is an example"
 ```html	
-	p {
-		font-size: 20px;
-	}
+    <style>
+        p {
+            font-size: 20px;
+        }
+    </style>
 ```
 
 How big or small your text is dependent on two factors, what do you want it to represent e.g the call to action, the main heading, the paragraph text and so on. the other factor is what screen you want it to be displayed on. Hence, while 100px might look okay on the screen of a desktop, a mobile phone users might need to adjust their phone screen before they can read it. That's why responsive design is all the rage out there in the programming world because you don't want to the mobile phone users to have a good experience at the expense of a desktop user and vice versa.
@@ -129,15 +135,19 @@ you might be curious why some text on a website are bold and the others are not 
 
 To change the default font weight of your text with css, we use the "font-weight" and add the value between 100 to 900 depending on how thing or bold we want our text to appear. However, it must be mentioned though that the normal font weight is usually around 300 to 400, with 400 being the most favoured figure. To use this in a code example, the CSS will look as follows:
 ```html
-	p{
-		font-weight: 700;
-	}
+    <style>
+        p{
+            font-weight: 700;
+        }
+    </style>
 ```
 By the way, here is another thing that you need to know, on most IDE and some online sourced fonts, the font weight has scaled the usual number specification and uses the natural English like "normal", "bold", "thin" etc. So, when choosing this format as your preferred way to specify your font weight, there is nothing much to add than simply changing the figure to the preferred keyword e.g
 ```html
-	p {
-		font-weight: bold;
-	}
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
 ```
 However, while this keywords are usually the same across fonts, some fonts have extra keywords such as "semi bold" "black" and so on. You can easily find the keyword on the page of any fonts with any of these extra keywords.
 
@@ -150,9 +160,11 @@ The default style for any text you create as a paragraph text is normal. However
 
 To use the font style in our css, we simply introduce the "font-style" as our property and the style we want to use whether "normal", "oblique", or "italics" as our value. e.g:
 ```html
-	p {
-		font-style: italics;
-	}
+    <style>
+        p {
+            font-style: italics;
+        }
+    </style>
 ```
 It is actually a bit redundant to add the "normal" value to the font-style property because even when you don't add it, the text is naturally in the "normal" state. It's just like saying your name everytime you meet your friends, it's awkward and unnecessary right? that's the exact way it feels when you add normal as the value.
 
