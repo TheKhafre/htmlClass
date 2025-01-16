@@ -1,0 +1,21 @@
+    p {
+        font-size: 100px;
+        color: red;
+        border: 1px solid black;
+    }
+
+    h3{
+        font-size: 50px;
+        color: blue;
+        border: 1px solid black;
+    }
+
+    .new_p {
+        font-size: 30px;
+        color: green;
+        border: 1px solid black;
+    }
+
+    .special::after {
+        content: "...";
+    }
