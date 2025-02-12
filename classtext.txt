@@ -1,0 +1,14 @@
+The fonts used for styling text and sizing includes:
+1- pixels (px)
+2- percentage (%)
+
+the advance sizing units includes:
+3- rem unit (rem)
+4- em unit (em)
+5- viewport width (vw)
+6- viewport hieght (vh)
+7- viewport minimum (vmin)
+8- viewport maximum (vmax)
+
+rem = root emulated sizing
+specificity
