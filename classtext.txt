@@ -12,3 +12,12 @@ the advance sizing units includes:
 
 rem = root emulated sizing
 specificity
+
+a way to make fonts and other elements on a web browser responsive is by using the clamp function. The clamp function takes 3 positional arguments when defining the font size:
+
+- the minimum size
+- the prefered size
+- and the maximum size
+hence, a size definition using clamp will look like this:
+
+font-size: clamp(min size, prefered size, max size)
