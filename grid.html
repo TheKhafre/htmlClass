@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding-top: 80px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 10px;
+            place-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        .div_1 {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        .div_2 {
+            background-color: red;
+            height: 100px;
+        }
+        .col-1 {
+            background-color: lightcoral;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <p class="col-1">heLlo_WorLd</p>
+        <div class="div_1"></div>
+        <div class="div_2"></div>
+        <div class="div_2"></div>
+        <div class="div_1"></div>
+        <div class="div_2"></div>
+
+    </header>
+</body>
+</html>
